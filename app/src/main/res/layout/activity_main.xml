@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHearts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView android:id="@+id/imgHeart1" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="4dp" android:src="@drawable/ic_heart" />
+        <ImageView android:id="@+id/imgHeart2" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="4dp" android:src="@drawable/ic_heart" />
+        <ImageView android:id="@+id/imgHeart3" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="4dp" android:src="@drawable/ic_heart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRoad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/layoutHearts"
+        app:layout_constraintBottom_toTopOf="@id/layoutControls">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="9.4"
+            android:background="#2C2C2C"
+            android:layout_marginEnd="2dp">
+            <ImageView android:id="@+id/obs_0_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_6" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_0_7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+
+            <ImageView android:id="@+id/imgPlayerLeft" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.4" android:padding="0dp" android:visibility="invisible" android:src="@drawable/ic_car" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="9.4"
+            android:background="#252525"
+            android:layout_marginEnd="2dp">
+            <ImageView android:id="@+id/obs_1_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_6" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_1_7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+
+            <ImageView android:id="@+id/imgPlayerCenter" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.4" android:padding="0dp" android:visibility="visible" android:src="@drawable/ic_car" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="9.4"
+            android:background="#2C2C2C">
+            <ImageView android:id="@+id/obs_2_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_6" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+            <ImageView android:id="@+id/obs_2_7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:visibility="invisible" android:src="@drawable/ic_obstacle" />
+
+            <ImageView android:id="@+id/imgPlayerRight" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.4" android:padding="0dp" android:visibility="invisible" android:src="@drawable/ic_car" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:text="←"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="→"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
