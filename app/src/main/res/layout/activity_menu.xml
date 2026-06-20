@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1E1E1E"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RACING GAME"
+        android:textColor="#FFD700"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
+
+    <Button android:id="@+id/btnSlow" android:layout_width="match_parent" android:layout_height="60dp" android:text="Buttons - Slow" android:layout_marginBottom="16dp"/>
+    <Button android:id="@+id/btnFast" android:layout_width="match_parent" android:layout_height="60dp" android:text="Buttons - Fast" android:layout_marginBottom="16dp"/>
+    <Button android:id="@+id/btnSensor" android:layout_width="match_parent" android:layout_height="60dp" android:text="Sensor Mode" android:layout_marginBottom="16dp"/>
+    <Button android:id="@+id/btnScores" android:layout_width="match_parent" android:layout_height="60dp" android:text="High Scores" android:backgroundTint="#4CAF50"/>
+</LinearLayout>
